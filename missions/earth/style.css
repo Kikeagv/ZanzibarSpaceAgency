@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #264653;
+    --title-font: 'Quicksand', sans-serif;
+    --text-font: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.referhome {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: var(--title-font);
+}
+
+.header__logo {
+    height: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu h2 {
+    font-family: var(--title-font);
+    text-align: center;
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+}
+
+.menu__card {
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.menu__card h3{
+    color: white;
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    background-color: none;
+}
+
+.menu__card--earth {
+    background-image: url(/assets/images/satellite_med.jpg);
+}
+
+.menu__card--moon {
+    background-image: url(/assets/images/moon_med.jpg);
+}
+
+.menu__card--mars {
+    background-image: url(/assets/images/mars_med.jpg);
+}
+
+.menu__card span {
+    position: relative;
+    bottom: 0;
+}
+
+.footer {
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    height: 8vh;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.footer__social img {
+    height: 100%;
+    margin: 5px;
+}
+
+.footer__disclaimer p{
+    text-align: center;
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+}
