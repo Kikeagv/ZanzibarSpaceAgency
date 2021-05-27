@@ -34,8 +34,9 @@ html {
     height: 100%;
 }
 
-.menu a {
-    text-decoration: none;
+.menu {
+    background-color: var(--main-color);
+    padding-bottom: 10px;
 }
 
 .menu h2 {
@@ -47,17 +48,25 @@ html {
 }
 
 .menu__card {
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;   
+}
+
+.menu__card__image {
     height: 30vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    text-decoration: none;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.menu__card--knightsat {
+    background-image: url(/assets/images/satellite1_unique.jpg);
 }
 
 .menu__card h3{
-    color: white;
+    color: black;
     font-family: var(--title-font);
     font-size: 2.5rem;
     margin-bottom: 2px;
@@ -65,21 +74,15 @@ html {
     background-color: none;
 }
 
-.menu__card--earth {
-    background-image: url(/assets/images/satellite_med.jpg);
+.menu__card--data {
+    font-family: var(--text-font);
+    padding-bottom: 10px;
 }
 
-.menu__card--moon {
-    background-image: url(/assets/images/moon_med.jpg);
-}
+.menu__card--data p{
+    margin-left: 5px;
+    font-size: 1.5rem;
 
-.menu__card--mars {
-    background-image: url(/assets/images/mars_med.jpg);
-}
-
-.menu__card span {
-    position: relative;
-    bottom: 0;
 }
 
 .footer {
